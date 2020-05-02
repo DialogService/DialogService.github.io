@@ -1,5 +1,8 @@
 theme: jekyll-theme-minimal
 title: .NET Dialog Service
 description: Cross-platform system dialogs
+logo: https://raw.githubusercontent.com/DialogService/DialogService.Media/master/DialogService%20Logo.png
 github:
-  is_project_page: true
+  is_project_page: false
+  repository_url: https://github.com/DialogService
+  repository_nwo: https://github.com/DialogService
