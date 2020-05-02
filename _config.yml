@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: .NET Dialog Service
 description: Cross-platform system dialogs
+site.github.is_project_page: true
