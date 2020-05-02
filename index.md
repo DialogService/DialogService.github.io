@@ -1,4 +1,4 @@
-### What is .NET Dialog Service
+### What is this
 This is the .NET library that aims to provide as simple as possible cross-platform system dialog interface for developers. 
 
 ### How to use
