@@ -5,6 +5,7 @@ This is the .NET library that aims to provide as simple as possible cross-platfo
 1. Add [DialogService.CrossPlatform](https://github.com/DialogService/DialogService.CrossPlatform) reference.
 2. Add [DialogService](https://github.com/DialogService/DialogService) reference.
 3. Follow this example:
+
 ```csharp
 using DialogService;
 using DialogService.Items;
