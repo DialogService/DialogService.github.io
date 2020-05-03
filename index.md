@@ -2,24 +2,45 @@
 This is the .NET library that aims to provide as simple as possible cross-platform system dialog interface for developers. 
 
 ### How to use
-1. Add [DialogService.CrossPlatform](https://github.com/DialogService/DialogService.CrossPlatform) reference.
-2. Add [DialogService](https://github.com/DialogService/DialogService) reference.
-3. Follow this example:
+1. Add [``DialogService``](https://www.nuget.org/packages/DialogService/) NuGet package to your project.
+
+```
+dotnet add package DialogService
+```
+
+2. Add references to implementations. 
+
+```
+dotnet add package DialogService.Win32
+dotnet add package DialogService.Linux
+dotnet add package DialogService.MacOS
+```
+
+There may be other implementations or your own
+
+3. Create a builder class, register implementations and get the required implementation.
 
 ```csharp
-using DialogService;
 using DialogService.Items;
+...
+// Using DialogPlatformBuilder to register all platforms and get a required one.
+var dsBuilder = new DialogPlatformBuilder();
+dsBuilder.AddPlatform<Win32.PlatformImplementation>();
+dsBuilder.AddPlatform<Linux.PlatformImplementation>();
+dsBuilder.AddPlatform<MacOS.PlatformImplementation>();
+var dialogService = dsBuilder.GetService();
 
-var dialogService = CrossPlatform.DialogService.Get(); // get's implementation for current platform
-var dialog = new Dialog("Test Dialog"); // create a dialog model with title
+// Creating a dialog model with items.
+var dialog = new Dialog();
+dialog.Title = "The Dialog";
 
-// use items from DialogService.Items namespace
-dialog.Items.Add(new Button("Click me")); 
+dialog.Items.Add(new Button("Click me"));
 dialog.Items.Add(new Label("This is the label!"));
 
 dialog.BottomPanel.Add(new Button("OK"));
 dialog.BottomPanel.Add(new Button("Cancel"));
 
+// Show the model
 dialogService.Show(dialog);
 ```
 
