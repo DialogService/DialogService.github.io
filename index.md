@@ -44,11 +44,7 @@ dialog.BottomPanel.Add(new Button("Cancel"));
 dialogService.Show(dialog);
 ```
 
-### Platforms
- - ✔️ **Windows**: half-implemented with WPF
- 
-   ![image](https://user-images.githubusercontent.com/25367511/80859811-2dbdee00-8c6c-11ea-8ecc-558f96a3f692.png)
-   
- - ⛔ **Linux**: not implemented
- - ⛔ **macOS**: not implemented
-
+### Implementations
+ - ♻️ [**Windows/Win32**](https://github.com/DialogService/DialogService.Win32): see [issues](https://github.com/DialogService/DialogService.Win32/issues)
+ - ⛔ [**Linux**](https://github.com/DialogService/DialogService.Linux): not implemented
+ - ⛔ [**macOS**](https://github.com/DialogService/DialogService.Linux): not implemented
