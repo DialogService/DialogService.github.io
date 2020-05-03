@@ -1,6 +1,9 @@
 ### What is this
 This is the .NET library that aims to provide as simple as possible cross-platform system dialog interface for developers. 
 
+### Warning
+Working in progress. Not all features are implemented. **It's practically impossible to use this library in production.**
+
 ### How to use
 1. Add [``DialogService``](https://www.nuget.org/packages/DialogService/) NuGet package to your project.
 
