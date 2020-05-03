@@ -2,16 +2,16 @@
 This is the .NET library that aims to provide as simple as possible cross-platform system dialog interface for developers. 
 
 ### Warning
-Working in progress. Not all features are implemented. **It's practically impossible to use this library in production.**
+Work in progress. Not all features are implemented. **It's practically impossible to use this library in production.**
 
 ### How to use
-1. Add [``DialogService``](https://www.nuget.org/packages/DialogService/) NuGet package to your project.
+ - Add [``DialogService``](https://www.nuget.org/packages/DialogService/) NuGet package to your project.
 
 ```
 dotnet add package DialogService
 ```
 
-2. Add references to implementations. 
+ - Add references to implementations. 
 
 ```
 dotnet add package DialogService.Win32
@@ -21,7 +21,7 @@ dotnet add package DialogService.MacOS
 
 There may be other implementations or your own
 
-3. Create a builder class, register implementations and get the required implementation.
+ -  Create a builder class, register implementations and get the required implementation.
 
 ```csharp
 using DialogService.Items;
