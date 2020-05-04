@@ -4,6 +4,11 @@ This is the .NET library that aims to provide as simple as possible cross-platfo
 ### Warning
 Work in progress. Not all features are implemented. **It's practically impossible to use this library in production.**
 
+### Implementations
+ - ⛔ [**Win32**](https://github.com/DialogService/DialogService.Win32): not implemented
+ - ⛔ [**Linux**](https://github.com/DialogService/DialogService.Linux): not implemented
+ - ⛔ [**macOS**](https://github.com/DialogService/DialogService.Linux): not implemented
+
 ### How to use
  - Add [``DialogService``](https://www.nuget.org/packages/DialogService/) NuGet package to your project.
 
@@ -46,8 +51,3 @@ dialog.BottomPanel.Add(new Button("Cancel"));
 // Show the model
 dialogService.Show(dialog);
 ```
-
-### Implementations
- - ♻️ [**Windows/Win32**](https://github.com/DialogService/DialogService.Win32): see [issues](https://github.com/DialogService/DialogService.Win32/issues)
- - ⛔ [**Linux**](https://github.com/DialogService/DialogService.Linux): not implemented
- - ⛔ [**macOS**](https://github.com/DialogService/DialogService.Linux): not implemented
